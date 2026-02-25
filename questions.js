@@ -82,5 +82,3 @@ const quizQuestions = [
     { q: "ఆస్ట్రేలియా బుష్ ఫైర్స్ (2020) లో ఎన్ని జంతువులు చనిపోయాయి?\n(How many animals were killed in 2020 Australian bushfires?)", a: ["100 మిలియన్లు", "200 మిలియన్లు", "500 మిలియన్లు", "1 బిలియన్"], c: 2 },
     { q: "ప్రకృతిని కాపాడితే మనకు ఏమి లభిస్తుంది?\n(Save the nature - Save the ______:)", a: ["డబ్బు (Money)", "భవిష్యత్తు (Future)", "నగరం (City)", "ఆస్తి (Property)"], c: 1 }
 ];
-
-
