@@ -1,17 +1,39 @@
 const quizQuestions = [
-  { 
-    "q": "What is the capital of Andhra Pradesh?", 
-    "a": ["Amaravati", "Vizag", "Kurnool", "Vijayawada"], 
-    "c": 0 
-  },
-  { 
-    "q": "మెరుగైన జీవనోపాధి కోసం ప్రజలు ఒక ప్రాంతం నుండి మరొక ప్రాంతానికి కాలానుగుణంగా వెళ్లడాన్ని ఏమంటారు?", 
-    "a": ["వలస (Migration)", "శ్రమ (Labour)", "విరాళం (Donation)", "మార్పు (Variation)"], 
-    "c": 0 
-  },
-  { 
-    "q": "వలస వెళ్లడం వల్ల పిల్లలు ప్రధానంగా దేనిని కోల్పోతారు?", 
-    "a": ["ఆహార సౌకర్యం (Food facility)", "ఆట సమయం (Play time)", "రోజువారీ శ్రమ (Daily labour)", "విద్య (Education)"], 
-    "c": 3 
-  }
+    { q: "మెరుగైన జీవనోపాధి కోసం ప్రజలు ఒక ప్రాంతం నుండి మరొక ప్రాంతానికి కాలానుగుణంగా వెళ్లడాన్ని ఏమంటారు?\n(A seasonal movement of people from one place to another is called?)", a: ["వలస (Migration)", "శ్రమ (Labour)", "విరాళం (Donation)", "మార్పు (Variation)"], c: 0 },
+    { q: "వలస వెళ్లడం వల్ల పిల్లలు ప్రధానంగా దేనిని కోల్పోతారు?\n(Migration brings a great loss to children's:)", a: ["ఆహార సౌకర్యం (Food facility)", "ఆట సమయం (Play time)", "రోజువారీ శ్రమ (Daily labour)", "విద్య (Education)"], c: 3 },
+    { q: "వలసకు గల సహజ కారణాలను గుర్తించండి?\n(Pick the natural reasons for migration:)", a: ["వరదలు (Floods)", "తుఫానులు (Cyclones)", "భూకంపాలు (Earthquakes)", "పైవన్నీ (All the above)"], c: 3 },
+    { q: "క్రింది వాటిలో వలసకు సహజ కారణం కానిది ఏది?\n(One of the following is not a natural reason for migration:)", a: ["పేదరికం (Poverty)", "భారీ వరదలు (Heavy floods)", "భూకంపం (Earthquake)", "తుఫాను (Cyclone)"], c: 0 },
+    { q: "వలసలకు గల కారణాలు ఏవి?\n(Find the reason for migration:)", a: ["సహజ (Natural)", "ఆర్థిక (Economical)", "1 మరియు 2 (Both 1 & 2)", "శారీరక ఎదుగుదల (Physical growth)"], c: 2 },
+    { q: "ఆర్థిక కారణం వల్ల జరిగే వలసకు ఉదాహరణ?\n(Choose the example of economical reason of migration:)", a: ["బదిలీలు (Transfers)", "పేదరికం (Poverty)", "1 మరియు 2 (Both 1 & 2)", "భారీ వర్షాలు (Heavy rains)"], c: 2 },
+    { q: "తుఫాను వల్ల పంటలు, ఇల్లు కోల్పోయి కొండయ్య కుటుంబం వలస వెళ్లడం ఏ కారణం?\n(Kondaiah's family shifted due to a cyclone. What reason affected them?)", a: ["సామాజిక వలస (Social migration)", "ప్రకృతి వైపరీత్యం (Natural calamity)", "వరద (Flood)", "పేదరికం (Poverty)"], c: 1 },
+    { q: "కూలీ పనుల కోసం ఒక కుటుంబం నగరానికి వలస వెళ్లడానికి కారణం ఏమిటి?\n(If a family moved to a city for daily wage works, what is the reason?)", a: ["పేదరికం (Poverty)", "సహజ కారణం (Natural reason)", "తుఫాను (Cyclone)", "విపత్తు (Calamity)"], c: 0 },
+    { q: "ఉద్యోగులు ఎదుర్కొనే వలస రకం ఏది?\n(Job holders or employees face this type of migration:)", a: ["సంచార వలస (Nomadicity)", "సామాజిక వలస (Social migration)", "బదిలీ (Transfer)", "పేదరికం (Poverty)"], c: 2 },
+    { q: "ఒక చోట స్థిరంగా ఉండకుండా గ్రామాల వెంట తిరిగే సోమయ్యకు ఏ వలస వర్తిస్తుంది?\n(Somaiah moves from one village to another. Which migration affects him?)", a: ["సహజ (Natural)", "సంచార (Nomadic)", "తుఫాను (Cyclone)", "వరదలు (Floods)"], c: 1 },
+    { q: "సంచార జాతుల (Nomads) జీవనశైలి ఎలా ఉంటుంది?\n(Nomads show their living style like this:)", a: ["స్థిర నివాసం (Permanent place)", "పెద్ద వ్యాపారాలు (High profile business)", "శాశ్వత ఉద్యోగం (Permanent job)", "ఒక చోటు నుండి మరో చోటుకు తిరగడం (Move from place to place)"], c: 3 },
+    { q: "క్రింది వాటిలో ప్రకృతి వైపరీత్యం కానిది ఏది?\n(One of the following is not a natural calamity:)", a: ["వరద (Flood)", "బదిలీ (Transfer)", "తుఫాను (Cyclone)", "భూకంపం (Earthquake)"], c: 1 },
+    { q: "వలసల ప్రభావం ఏమిటి?\n(Find the effect of migration:)", a: ["పిల్లలు బాలకార్మికులుగా మారడం", "నివాసం కోల్పోయి ఇబ్బంది పడటం", "1 మరియు 2 (Both 1 & 2)", "కుటుంబం ఎక్కువ డబ్బు సంపాదించడం"], c: 2 },
+    { q: "కుమార్ కొడుకు విదేశాలకు వెళ్లి డబ్బు సంపాదించి తిరిగి వచ్చాడు. ఇది ఏ రకమైన వలస?\n(Kumar's son went abroad for a job and returned. What type of migration?)", a: ["తాత్కాలిక (Temporary)", "శాశ్వత (Permanent)", "సహజ (Natural)", "సామాజిక (Social)"], c: 0 },
+    { q: "పని కోసం వేరే ప్రాంతానికి వెళ్లి, పని పూర్తయ్యాక తిరిగి వచ్చే వలస ఏది?\n(A group migrates for work and returns after completion. It is a ______ migration.)", a: ["సహజ (Natural)", "భౌతిక (Physical)", "తుఫాను (Cyclone)", "కాలానుగుణ (Seasonal)"], c: 3 },
+    { q: "ప్రకాశం జిల్లాలో ప్రధాన పంట ఏది?\n(The main crop in Prakasam district:)", a: ["వరి (Rice)", "పొగాకు (Tobacco)", "చెరకు (Sugarcane)", "మొక్కజొన్న (Corn)"], c: 1 },
+    { q: "పల్లెల నుండి పట్టణాలకు వలస వెళ్లడం వల్ల ఏర్పడేవి?\n(These are formed due to rapid migration from rural to urban areas:)", a: ["మురికివాడలు (Slums)", "నగరాలు (Cities)", "దేశాలు (Countries)", "పంట పొలాలు (Crop lands)"], c: 0 },
+    { q: "మెట్రోపాలిటన్ నగరాల్లో మురికివాడల ఏర్పాటుకు కారణం?\n(Which factor leads to the formation of slums?)", a: ["పేదరికం (Poverty)", "అసంఘటిత ఆర్థిక వ్యవస్థ (Informal economy)", "1 మరియు 2 (Both 1 & 2)", "ఉపాధి (Employment)"], c: 2 },
+    { q: "వలసలకు ప్రాథమిక కారణం ఏది?\n(Basic reason for migration:)", a: ["ప్రకృతి వైపరీత్యాలు", "పేదరికం", "నిరుద్యోగం", "పైవన్నీ (All the given)"], c: 3 },
+    { q: "నగరాలకు వలసలను ఆపడానికి ప్రభుత్వం ఏమి చేయాలి?\n(What should Government do to stop migration to cities?)", a: ["గ్రామీణాభివృద్ధి కార్యక్రమాలు", "పట్టణాల్లో ఇళ్లు కట్టడం", "రుణ సౌకర్యాలు మెరుగుపరచడం", "గ్రామాల్లో తోటలు పెంచడం"], c: 0 },
+    { q: "నగరాలకు వలస వెళ్లడం వల్ల తలెత్తే సమస్యలు?\n(What problems arise in cities due to rapid migration?)", a: ["తాత్కాలిక నివాసాలు", "సౌకర్యాల కొరత", "జనాభా సాంద్రత", "పైవన్నీ (All the given)"], c: 3 },
+    { q: "వలస దేనిని ప్రభావితం చేస్తుంది?\n(Migration effects:)", a: ["ప్రాథమిక అవసరాలు", "పిల్లల విద్య", "ఆర్థిక స్థితి", "పైవన్నీ (All the given)"], c: 3 },
+    { q: "కుటుంబ ఆదాయం, ఖర్చుల వివరాలను చూపే నివేదిక ఏది?\n(Statement showing income and expenditure:)", a: ["కుటుంబ హోదా", "కుటుంబ బడ్జెట్ (Family budget)", "కుటుంబ శైలి", "కుటుంబ జీవితం"], c: 1 },
+    { q: "అత్యధిక మరియు అనవసర ఖర్చులను దేని ద్వారా గుర్తించవచ్చు?\n(How do you identify unnecessary expenditure?)", a: ["నెలవారీ బడ్జెట్", "గృహ బడ్జెట్ (Household budget)", "అధిక ఖర్చులు", "విలాస బడ్జెట్"], c: 1 },
+    { q: "పొదుపు (Savings) చేసే కుటుంబం ఏది?\n(Which family saves money?)", a: ["వీరయ్య కుటుంబం", "రాకేష్ కుటుంబం", "ఇద్దరూ", "ఎవరూ కాదు"], c: 0 },
+    { q: "మనుషులు జీవించడానికి అవసరమైనవి?\n(The basic needs that human beings require to survive:)", a: ["సౌకర్యం", "విలాసం", "అవసరం (Necessity)", "ఖరీదైనవి"], c: 2 },
+    { q: "ఎక్కువ ఖర్చుతో కూడిన అత్యున్నత సౌకర్యాన్ని ఏమంటారు?\n(A state of greatest comfort at high expenses:)", a: ["విలాసం (Luxury)", "సౌకర్యం", "సంతోషం", "అవసరం"], c: 0 },
+    { q: "సౌకర్యవంతమైన జీవనానికి అవసరమైన వాటిని ఏమంటారు?\n(Needs which allow us to lead a comfortable living:)", a: ["విలాసం", "కొరత", "అవసరం", "సౌకర్యం (Comfort)"], c: 3 },
+    { q: "క్రింది వాటిలో విలాస వస్తువులు ఏవి?\n(One of the following comes under luxury items:)", a: ["కారు (Car)", "బంగారం (Gold)", "1 మరియు 2 (Both 1 & 2)", "ఆహారం (Food)"], c: 2 },
+    { q: "నగరాల్లో మురికివాడలు ఏర్పడటానికి కారణం?\n(In cities slums are formed due to:)", a: ["ఆర్థిక వృద్ధి", "విద్య", "వ్యాపార విపత్తు", "వలస (Migration)"], c: 3 },
+    { q: "పాఠశాలల్లో ప్రభుత్వం ఇచ్చే ప్రయోజనాలు?\n(Mention the benefits provided by Government in schools:)", a: ["మధ్యాహ్న భోజనం", "యూనిఫాం", "పాఠ్యపుస్తకాలు", "పైవన్నీ (All the given)"], c: 3 },
+    { q: "ఉన్నత విద్య కోసం పేదలకు ఏది సహాయపడుతుంది?\n(This helps the poor students for higher education:)", a: ["విద్యా రుణం (Educational loan)", "బంగారు ఆభరణాలు", "ఇతరుల సాయం", "వాణిజ్య రుణం"], c: 0 },
+    { q: "భారత క్షిపణి పితామహుడు (Missile man of India)?", qen: "Missile man of India:", a: ["రాజేంద్ర ప్రసాద్", "ఏ.పి.జె. అబ్దుల్ కలాం", "రంగనాథ్ మిశ్రా", "హోమీ బాబా"], c: 1 },
+    { q: "గ్రామాల్లో ఆర్థిక కార్యకలాపాలు పెంచితే దేనిని ఆపవచ్చు?\n(Strengthening economic activity in rural areas can stop:)", a: ["పిల్లల విద్య", "ప్రజల వలస (Migration)", "కాలానుగుణ చదువులు", "పంట కోతలు"], c: 1 },
+    { q: "గృహ బడ్జెట్ వల్ల ప్రయోజనం ఏమిటి?\n(What is the advantage of a 'household budget'?)", a: ["ఎక్కువ ఖర్చును గుర్తిస్తుంది", "అనవసర ఖర్చును గుర్తిస్తుంది", "పొదుపుకు సాయపడుతుంది", "పైవన్నీ (All the given)"], c: 3 },
+    { q: "కుటుంబ బడ్జెట్ ను దేని ద్వారా చూపవచ్చు?\n(A family budget can be shown in a:)", a: ["పై చార్ట్ (Pie chart)", "ఫ్లో చార్ట్", "బార్ గ్రాఫ్", "1 లేదా 3 (1 or 3)"], c: 3 },
+    { q: "క్రింది వాటిలో అవసరాలను గుర్తించండి?\n(Find the necessities from the following:)", a: ["ఆహారం, మంచం, షూస్", "ఆహారం, కూరగాయలు, సరుకులు", "కారు, మంచం, సరుకులు", "మంచం, కూరగాయలు, షూస్"], c: 1 }
 ];
