@@ -29,7 +29,7 @@ const quizQuestions = [
     { q: "సౌకర్యవంతమైన జీవనానికి అవసరమైన వాటిని ఏమంటారు?\n(Needs which allow us to lead a comfortable living:)", a: ["విలాసం", "కొరత", "అవసరం", "సౌకర్యం (Comfort)"], c: 3 },
     { q: "క్రింది వాటిలో విలాస వస్తువులు ఏవి?\n(One of the following comes under luxury items:)", a: ["కారు (Car)", "బంగారం (Gold)", "1 మరియు 2 (Both 1 & 2)", "ఆహారం (Food)"], c: 2 },
     { q: "నగరాల్లో మురికివాడలు ఏర్పడటానికి కారణం?\n(In cities slums are formed due to:)", a: ["ఆర్థిక వృద్ధి", "విద్య", "వ్యాపార విపత్తు", "వలస (Migration)"], c: 3 },
-    { q: "పాఠశాలల్లో ప్రభుత్వం ఇచ్చే ప్రయోజనాలు?\n(Mention the benefits provided by Government in schools:)", a: ["మధ్యాహ్న భోజనం", "యూనిఫాం", "పాఠ్యపుస్తకాలు", "పైవన్నీ (All the above)"], c: 3 },
+    { q: "పాఠశాలల్లో ప్రభుత్వం ఇచ్చే ప్రయోజనాలు?\n(Mention the benefits provided by Government in schools:)", a: ["మధ్యాహ్న భోజనం", "యూనిఫాం", "పాఠ్యపుస్తకాలు", "పైవన్నీ (All the given)"], c: 3 },
     { q: "ఉన్నత విద్య కోసం పేదలకు ఏది సహాయపడుతుంది?\n(This helps the poor students for higher education:)", a: ["విద్యా రుణం (Educational loan)", "బంగారు ఆభరణాలు", "ఇతరుల సాయం", "వాణిజ్య రుణం"], c: 0 },
     { q: "భారత క్షిపణి పితామహుడు (Missile man of India)?\n(Missile man of India:)", a: ["రాజేంద్ర ప్రసాద్", "ఏ.పి.జె. అబ్దుల్ కలాం", "రంగనాథ్ మిశ్రా", "హోమీ బాబా"], c: 1 },
     { q: "గ్రామాల్లో ఆర్థిక కార్యకలాపాలు పెంచితే దేనిని ఆపవచ్చు?\n(Strengthening economic activity in rural areas can stop:)", a: ["పిల్లల విద్య", "ప్రజల వలస (Migration)", "కాలానుగుణ చదువులు", "పంట కోతలు"], c: 1 },
