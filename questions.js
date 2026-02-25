@@ -1,15 +1,4 @@
-﻿const quizQuestions = [
-  {
-    "question": "What is the capital of Andhra Pradesh?",
-    "options": ["Amaravati", "Vizag", "Kurnool", "Vijayawada"],
-    "answer": "Amaravati"
-  },
-  {
-    "question": "Who is the author of...",
-    "options": ["A", "B", "C", "D"],
-    "answer": "A"
-  }
- const db = [
+const quizQuestions = [
         { q: "మెరుగైన జీవనోపాధి కోసం ప్రజలు ఒక ప్రాంతం నుండి మరొక ప్రాంతానికి కాలానుగుణంగా వెళ్లడాన్ని ఏమంటారు?", qen: "A seasonal movement of people from one place to another in search of better livelihood is called?", a: ["వలస (Migration)", "శ్రమ (Labour)", "విరాళం (Donation)", "మార్పు (Variation)"], c: 0 },
         { q: "వలస వెళ్లడం వల్ల పిల్లలు ప్రధానంగా దేనిని కోల్పోతారు?", qen: "Migration brings a great loss to children's:", a: ["ఆహార సౌకర్యం (Food facility)", "ఆట సమయం (Play time)", "రోజువారీ శ్రమ (Daily labour)", "విద్య (Education)"], c: 3 },
         { q: "వలసకు గల సహజ కారణాలను గుర్తించండి?", qen: "Pick the natural reasons for migration:", a: ["వరదలు (Floods)", "తుఫానులు (Cyclones)", "భూకంపాలు (Earthquakes)", "పైవన్నీ (All the above)"], c: 3 },
@@ -525,4 +514,5 @@
         { q: "గ్రామ సచివాలయంలో అగ్రికల్చర్ అసిస్టెంట్ పని ఏమిటి?", qen: "What is the work of Agriculture Assistant in village secretariat?", a: ["రైతులకు సలహాలు ఇవ్వడం", "పన్నులు వసూలు చేయడం", "చదువు చెప్పడం", "మందులు ఇవ్వడం"], aen: ["Advice farmers", "Collect taxes", "Teach lessons", "Give medicines"], c: 0 },
         { q: "ప్రజాస్వామ్యంలో అసలైన పాలకులు ఎవరు?", qen: "Who are the real rulers in a democracy?", a: ["ప్రజలు", "నాయకులు", "అధికారులు", "సైనికులు"], aen: ["People", "Leaders", "Officers", "Soldiers"], c: 0 },
         { q: "గ్రామ సచివాలయ వ్యవస్థను ఏ రాష్ట్రం ప్రారంభించింది?", qen: "Which state started Grama Sachivalayam system?", a: ["తెలంగాణ", "ఆంధ్రప్రదేశ్", "తమిళనాడు", "కేరళ"], aen: ["Telangana", "Andhra Pradesh", "Tamil Nadu", "Kerala"], c: 1 }
+
 ];
